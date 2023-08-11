@@ -39,9 +39,8 @@ jobs:
       - name: set env
         run: |
           export FOO='foo'
-          export BAR='bar'
+          echo $FOO
 
       - name: get env
         run: |
           echo $FOO
-          echo $BAR
