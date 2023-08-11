@@ -35,3 +35,13 @@ jobs:
       
       - name: Check Files
         uses: chitrangpatel/first-custom-action@main
+
+      - name: set env
+        run: |
+          export FOO='foo'
+          export BAR='bar'
+
+      - name: get env
+        run: |
+          echo $FOO
+          echo $BAR
