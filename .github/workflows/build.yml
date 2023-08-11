@@ -32,9 +32,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          env
-          echo "-------"
-          echo $PATH
       
       - name: Check Files
         uses: chitrangpatel/first-custom-action@main
