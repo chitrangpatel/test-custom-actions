@@ -36,8 +36,7 @@ jobs:
       - name: Check Files
         uses: chitrangpatel/first-custom-action@main
 
-      - name: setup go
-        uses: @actions/setup-go@main
+      - uses: actions/setup-go@v4
         with:
           go-version: '>=1.17.0'
 
