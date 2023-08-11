@@ -38,7 +38,7 @@ jobs:
 
       - name: set env
         run: |
-          export FOO='foo'
+          echo "FOO=foo" >> $GITHUB_ENV
           echo $FOO
 
       - name: get env
