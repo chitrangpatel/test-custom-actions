@@ -38,15 +38,3 @@ jobs:
       
       - name: Check Files
         uses: chitrangpatel/first-custom-action@main
-
-      - uses: actions/setup-go@v4
-        with:
-          go-version: '>=1.17.0'
-
-      - name: check-go
-        run: |
-          which go
-          go version
-          env
-          echo "-------"
-          echo $PATH
