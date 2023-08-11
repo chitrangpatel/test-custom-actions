@@ -36,3 +36,12 @@ jobs:
       - name: Check Files
         uses: chitrangpatel/first-custom-action@main
 
+      - name: setup go
+        uses: @actions/setup-go
+        with:
+          go-version: '>=1.17.0'
+
+      - name: check-go
+        run: |
+          which go
+          go version
